@@ -5,11 +5,11 @@
   --text: #1b1c1e;
   --text-soft: #55585e;
   --border: #d8d8d3;
-  --accent: #2f9e44;
-  --accent-strong: #1f7a34;
+  --accent: #2f4fd6;
+  --accent-strong: #1c34a0;
   --btn-text: #ffffff;
-  --btn-bg: #1f7a34;
-  --btn-bg-hover: #2f9e44;
+  --btn-bg: #1c34a0;
+  --btn-bg-hover: #2f4fd6;
   --shadow: 0 10px 30px -12px rgba(27, 28, 30, 0.16);
   --font-display: "Fraunces", serif;
   --font-body: "Inter", system-ui, -apple-system, sans-serif;
@@ -24,11 +24,11 @@
   --text: #f2f1ee;
   --text-soft: #a1a3a8;
   --border: #2c2d31;
-  --accent: #4ade80;
-  --accent-strong: #86efac;
-  --btn-text: #0a1a0c;
-  --btn-bg: #4ade80;
-  --btn-bg-hover: #86efac;
+  --accent: #6d8dff;
+  --accent-strong: #93aaff;
+  --btn-text: #ffffff;
+  --btn-bg: #3f5fe0;
+  --btn-bg-hover: #6d8dff;
   --shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.55);
   color-scheme: dark;
 }
@@ -41,11 +41,11 @@
     --text: #f2f1ee;
     --text-soft: #a1a3a8;
     --border: #2c2d31;
-    --accent: #4ade80;
-    --accent-strong: #86efac;
-    --btn-text: #0a1a0c;
-    --btn-bg: #4ade80;
-    --btn-bg-hover: #86efac;
+    --accent: #6d8dff;
+    --accent-strong: #93aaff;
+    --btn-text: #ffffff;
+    --btn-bg: #3f5fe0;
+    --btn-bg-hover: #6d8dff;
     --shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.55);
     color-scheme: dark;
   }
