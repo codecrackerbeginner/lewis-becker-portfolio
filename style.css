@@ -406,15 +406,51 @@ body {
 }
 .timeline-head {
   display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 4px;
+}
+.timeline-head-text {
+  flex: 1;
+  min-width: 0;
+}
+.timeline-head-top {
+  display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   gap: 10px 16px;
-  margin-bottom: 4px;
 }
 .timeline-head h3 {
   font-family: var(--font-display);
   font-size: 1.3rem;
   margin: 0;
+}
+.org-logo {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.org-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 4px;
+}
+.org-logo--fallback {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border: none;
+  border-radius: 50%;
+  color: var(--accent);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.75rem;
 }
 .timeline-date {
   font-size: 0.82rem;
