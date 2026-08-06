@@ -79,3 +79,24 @@ const skillObserver = new IntersectionObserver((entries) => {
 skillLists.forEach(el => skillObserver.observe(el));
 
 }
+
+// Scroll-spy — highlight the nav link for the section currently in view
+const navLinks = Array.from(mainNav.querySelectorAll('a'));
+const spySections = ['about', 'experience', 'education', 'skills', 'contact']
+  .map(id => document.getElementById(id))
+  .filter(Boolean);
+
+if ('IntersectionObserver' in window) {
+  const spyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const link = navLinks.find(a => a.getAttribute('href') === '#' + entry.target.id);
+        if (!link) return;
+        navLinks.forEach(a => a.classList.remove('nav-active'));
+        link.classList.add('nav-active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+
+  spySections.forEach(section => spyObserver.observe(section));
+}

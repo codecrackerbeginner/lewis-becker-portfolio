@@ -135,6 +135,8 @@ body {
 }
 .nav a:hover { color: var(--text); }
 .nav a:hover::after { width: 100%; }
+.nav a.nav-active { color: var(--text); }
+.nav a.nav-active::after { width: 100%; }
 .header-actions {
   display: flex;
   align-items: center;
