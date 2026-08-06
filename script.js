@@ -31,6 +31,12 @@ window.addEventListener('scroll', () => {
   updateProgress();
 });
 
+// Floating contact button
+const fab = document.querySelector('.fab');
+window.addEventListener('scroll', () => {
+  fab.classList.toggle('fab--visible', window.scrollY > 500);
+});
+
 // Scroll progress bar
 const progressBar = document.getElementById('progressBar');
 function updateProgress() {
