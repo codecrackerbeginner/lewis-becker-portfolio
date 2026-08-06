@@ -376,6 +376,14 @@ body {
   background-image: var(--grid-lines);
   background-size: var(--grid-size) var(--grid-size);
   background-attachment: fixed;
+  clip-path: polygon(0 32px, 100% 0, 100% 100%, 0 100%);
+  margin-top: -32px;
+  padding-top: calc(88px + 32px);
+}
+.section-alt + .section {
+  clip-path: polygon(0 0, 100% 32px, 100% 100%, 0 100%);
+  margin-top: -32px;
+  padding-top: calc(88px + 32px);
 }
 .section-title {
   font-family: var(--font-display);
@@ -763,4 +771,16 @@ body {
   }
   .nav.open { transform: translateY(0); }
   .nav-toggle { display: flex; }
+
+  .section { padding: 72px 0; }
+  .section-alt {
+    clip-path: polygon(0 16px, 100% 0, 100% 100%, 0 100%);
+    margin-top: -16px;
+    padding-top: calc(72px + 16px);
+  }
+  .section-alt + .section {
+    clip-path: polygon(0 0, 100% 16px, 100% 100%, 0 100%);
+    margin-top: -16px;
+    padding-top: calc(72px + 16px);
+  }
 }
