@@ -10,6 +10,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+.hero-promise {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+.hero-promise p {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  margin: 0 0 6px;
+  padding-left: 14px;
+  border-left: 2px solid var(--accent);
+  line-height: 1.5;
+}
+.hero-promise p:last-child { margin-bottom: 0; }
+.contact-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+</style>
 <noscript><style>.reveal{opacity:1!important;transform:none!important;} .skill-list .bar-fill{width:var(--level)!important;}</style></noscript>
 </head>
 <body>
@@ -50,14 +69,19 @@
       <div class="hero-text">
         <p class="hero-availability reveal"><span class="avail-dot" aria-hidden="true"></span>München — offen für das Richtige</p>
         <h1 class="reveal">Lewis Becker</h1>
-        <p class="hero-role reveal">Senior Consultant — Strategie, Digitalisierung &amp; KI in Customer Success</p>
-        <p class="hero-desc reveal">Ich begleite Unternehmen durch die unübersichtlichen Phasen von Digitalisierung und KI — mit Struktur, Ehrlichkeit und dem Willen, tatsächlich etwas zu verändern.</p>
+        <p class="hero-role reveal">Ich bringe Digitalisierungsprojekte tatsächlich ins Ziel — von der Strategie bis zum Go-Live in mehreren Märkten.</p>
+        <p class="hero-desc reveal">Internationales Projektmanagement, KI-Implementierung, Rollout-Management. Ich mache komplexe Vorhaben fertig — nicht nur planbar.</p>
         <div class="hero-actions reveal">
           <a href="assets/Lewis_Becker_CV.pdf" class="btn btn-primary" download>
             <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
             Lebenslauf (PDF) herunterladen
           </a>
           <a href="#contact" class="btn btn-secondary">Kontakt aufnehmen</a>
+        </div>
+        <div class="hero-promise">
+          <p>Jemanden der Projekte nicht nur plant, sondern durchzieht.</p>
+          <p>Der KI nicht als Buzzword verkauft, sondern einbaut.</p>
+          <p>Der international funktioniert und trotzdem ansprechbar bleibt.</p>
         </div>
       </div>
       <div class="hero-photo reveal">
@@ -120,16 +144,12 @@
               </div>
             </div>
             <ul>
-              <li>Programm-Owner „KVP" innerhalb eines Customer-Success-Projekts</li>
-              <li>Beratung von Unternehmen in Strategie-, Digitalisierungs- und Effizienzprojekten</li>
-              <li>Konzeption von Schulungsmaterialien und Durchführung von Trainings für Mitarbeitende eines OEMs im Luxussegment</li>
-              <li>Besonderer Fokus auf KI-Implementierung in Customer-Success-Prozessen</li>
-              <li>Internalisierung von Customer Support eines OEM im Luxussegment</li>
-              <li>Entwicklung und Präsentation von Business Cases, Konzepten und Handlungsempfehlungen für das Top-Management</li>
-              <li>Internationales Projektmanagement nach SAFe im Bereich Digital Products</li>
-              <li>Roll-Out Manager für internationale Go-Lives von App-Features, Digital Services und Konnektivitätsprodukten</li>
-              <li>Durchführung von Analysen und KPI-Dashboards mit Power BI, Tableau und Celonis</li>
-              <li>Erfolgreiche Zusammenarbeit mit multikulturellen, interdisziplinären Teams in Projekten mit hoher Reiseintensität</li>
+              <li>Rollout von App-Features und Digital Services in mehreren internationalen Märkten — termingerecht, ohne Eskalation zum Top-Management</li>
+              <li>Programm-Owner „KVP" in einem Customer-Success-Projekt: kontinuierliche Verbesserung von Schulungskonzepten und Supportprozessen für einen OEM im Luxussegment</li>
+              <li>Internalisierung des Customer Supports eines OEM — von der Konzeption bis zur operativen Übergabe</li>
+              <li>KPI-Dashboards in Power BI, Tableau und Celonis als Entscheidungsgrundlage für monatliche Top-Management-Reviews</li>
+              <li>Business Cases und Handlungsempfehlungen für Führungsebene — gestützt durch Daten, nicht durch Bauchgefühl</li>
+              <li>Koordination interdisziplinärer, multinationaler Teams nach SAFe über mehrere Zeitzonen hinweg</li>
             </ul>
           </div>
         </div>
@@ -149,10 +169,9 @@
               </div>
             </div>
             <ul>
-              <li>Projektmanagement und Roll-out-Vorbereitung für ein internationales Finanzprodukt</li>
-              <li>Web Design, Nutzertests und Kundenzufriedenheitsanalysen (NPS-Score)</li>
-              <li>Durchführung von Wettbewerbsanalysen zu Themen wie Angebotskonzepte, Kontaktkanäle und Datenqualität</li>
-              <li>Erstellung von Präsentationen für das Top-Management</li>
+              <li>Rollout-Vorbereitung für ein internationales Finanzprodukt — von der Marktanalyse bis zur Go-Live-Dokumentation</li>
+              <li>Nutzertests und NPS-Analysen als Basis für UX-Entscheidungen im Produktteam</li>
+              <li>Wettbewerbsanalysen zu Angebotskonzepten und Kontaktkanälen für das Top-Management</li>
             </ul>
           </div>
         </div>
@@ -196,11 +215,23 @@
         <div class="skills-col reveal">
           <h3>IT Skills</h3>
           <ul class="skill-list">
-            <li><span>MS Office</span><div class="bar"><div class="bar-fill" style="--level:100%"></div></div><em>Experte</em></li>
-            <li><span>Miro</span><div class="bar"><div class="bar-fill" style="--level:100%"></div></div><em>Experte</em></li>
+            <li style="--level: 85%">
+              <span>Power BI</span>
+              <div class="bar"><div class="bar-fill"></div></div>
+              <em>Fortgeschritten</em>
+            </li>
+            <li style="--level: 75%">
+              <span>SAFe</span>
+              <div class="bar"><div class="bar-fill"></div></div>
+              <em>Fortgeschritten</em>
+            </li>
+            <li style="--level: 65%">
+              <span>Celonis</span>
+              <div class="bar"><div class="bar-fill"></div></div>
+              <em>Grundwissen</em>
+            </li>
             <li><span>Figma</span><div class="bar"><div class="bar-fill" style="--level:45%"></div></div><em>Grundwissen</em></li>
-            <li><span>Tableau</span><div class="bar"><div class="bar-fill" style="--level:45%"></div></div><em>Grundwissen</em></li>
-            <li><span>Celonis</span><div class="bar"><div class="bar-fill" style="--level:45%"></div></div><em>Grundwissen</em></li>
+            <li><span>Tableau</span><div class="bar"><div class="bar-fill" style="--level:75%"></div></div><em>Grundwissen</em></li>
           </ul>
           <p class="skill-note">Excel opened this career. KI will probably close it. Somewhere in between is where I work.</p>
         </div>
@@ -219,7 +250,7 @@
     <div class="section-deco" aria-hidden="true">05</div>
     <div class="container">
       <h2 class="section-title reveal"><span class="section-num">05 <span class="section-num-sub">/ talk</span></span> Kontakt</h2>
-      <p class="contact-intro reveal">Ich freue mich über eine Nachricht — ob für ein Projekt, eine Rolle oder einen fachlichen Austausch.<span class="contact-note">Ich antworte schnell. Meistens.</span></p>
+      <p class="contact-intro reveal">Ich bin aktuell offen für neue Projekte und Rollen — idealerweise ab sofort oder nach Absprache. Wenn du glaubst, dass wir zusammenpassen: einfach schreiben. Kein Pitch, kein Formular.<span class="contact-note">Ich antworte schnell. Meistens.</span></p>
       <div class="contact-grid reveal">
         <a class="contact-card" href="mailto:lewis_becker@icloud.com">
           <span class="contact-label">E-Mail</span>
@@ -233,6 +264,11 @@
           <span class="contact-label">Standort</span>
           <span class="contact-value">München, Deutschland</span>
         </div>
+        <!-- TODO: update LinkedIn URL -->
+        <a href="https://www.linkedin.com/in/lewis-becker/" class="contact-card" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">lewis-becker</span>
+        </a>
       </div>
     </div>
   </section>
