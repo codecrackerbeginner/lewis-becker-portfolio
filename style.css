@@ -371,7 +371,31 @@ body {
 .photo-frame:hover img { transform: scale(1.05); }
 
 /* Sections */
-.section { padding: 88px 0; }
+.section {
+  padding: 88px 0;
+  position: relative;
+  overflow: hidden;
+}
+.section > .container {
+  position: relative;
+  z-index: 1;
+}
+.section-deco {
+  position: absolute;
+  right: -20px;
+  top: -40px;
+  font-family: var(--font-display);
+  font-size: clamp(120px, 20vw, 220px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: transparent;
+  -webkit-text-stroke: 2px color-mix(in srgb, var(--accent) 12%, transparent);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
 .section-alt {
   background-color: var(--bg-alt);
   background-image: var(--grid-lines);
@@ -774,6 +798,7 @@ body {
   .nav-toggle { display: flex; }
 
   .section { padding: 72px 0; }
+  .section-deco { font-size: clamp(80px, 22vw, 120px); opacity: 0.6; }
   .section-alt {
     clip-path: polygon(0 16px, 100% 0, 100% 100%, 0 100%);
     margin-top: -16px;
