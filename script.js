@@ -106,3 +106,28 @@ if ('IntersectionObserver' in window) {
 
   spySections.forEach(section => spyObserver.observe(section));
 }
+
+// Parallax on the hero portrait
+const photoFrame = document.querySelector('.photo-frame');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (photoFrame && !prefersReducedMotion && window.innerWidth >= 860) {
+  let ticking = false;
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const scrollY = window.scrollY;
+        const heroHeight = document.querySelector('.hero').offsetHeight;
+        if (scrollY < heroHeight * 1.5) {
+          const offset = scrollY * 0.18; // 0.18 = parallax intensity
+          photoFrame.style.setProperty('--parallax-y', `${offset}px`);
+        } else {
+          photoFrame.style.setProperty('--parallax-y', '0px');
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+}

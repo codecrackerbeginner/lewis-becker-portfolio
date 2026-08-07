@@ -354,10 +354,11 @@ body {
   background: var(--bg-alt);
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
+  transform: translateY(var(--parallax-y, 0)) var(--hover-transform, );
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
 }
 .photo-frame:hover {
-  transform: translateY(-6px) rotate(-1deg) scale(1.015);
+  --hover-transform: translateY(-6px) rotate(-1deg) scale(1.015);
   box-shadow: 0 20px 40px -16px color-mix(in srgb, var(--accent) 45%, transparent);
 }
 .photo-frame img {
