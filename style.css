@@ -11,8 +11,8 @@
   --btn-bg: #1c34a0;
   --btn-bg-hover: #2f4fd6;
   --shadow: 0 10px 30px -12px rgba(27, 28, 30, 0.16);
-  --font-display: "Fraunces", serif;
-  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
   --radius: 14px;
   --grid-lines: linear-gradient(to right, var(--border) 1px, transparent 1px),
     linear-gradient(to bottom, var(--border) 1px, transparent 1px);
@@ -64,7 +64,8 @@ body {
   background-size: var(--grid-size) var(--grid-size);
   background-attachment: fixed;
   color: var(--text);
-  font-family: var(--font-body);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -107,8 +108,8 @@ body {
   height: 72px;
 }
 .logo {
-  font-family: var(--font-display);
-  font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
   font-size: 1.15rem;
   color: var(--text);
   text-decoration: none;
@@ -124,7 +125,7 @@ body {
   color: var(--text-soft);
   text-decoration: none;
   font-size: 0.92rem;
-  font-weight: 500;
+  font-weight: 700;
   transition: color 0.2s ease;
   position: relative;
   padding-bottom: 4px;
@@ -279,21 +280,23 @@ body {
   100% { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
 }
 .hero h1 {
-  font-family: var(--font-display);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
   font-size: clamp(2.6rem, 5vw, 4.2rem);
   line-height: 1.02;
   margin: 0 0 14px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 .hero-role {
   font-size: clamp(1.05rem, 2vw, 1.3rem);
   color: var(--text);
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 0 18px;
 }
 .hero-desc {
   color: var(--text-soft);
   font-size: 1.05rem;
+  font-weight: 400;
   max-width: 52ch;
   margin: 0 0 34px;
 }
@@ -384,7 +387,7 @@ body {
   position: absolute;
   right: -20px;
   top: -40px;
-  font-family: var(--font-display);
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: clamp(120px, 20vw, 220px);
   font-weight: 900;
   line-height: 1;
@@ -411,16 +414,17 @@ body {
   padding-top: calc(88px + 32px);
 }
 .section-title {
-  font-family: var(--font-display);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
   font-size: clamp(1.6rem, 3vw, 2.1rem);
   margin: 0 0 40px;
   display: flex;
   align-items: baseline;
   gap: 14px;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 .section-num {
-  font-family: var(--font-body);
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--accent);
@@ -444,6 +448,7 @@ body {
 .about-text {
   color: var(--text-soft);
   font-size: 1.02rem;
+  font-weight: 400;
   margin: 0;
 }
 .about-text strong { color: var(--text); }
@@ -517,7 +522,7 @@ body {
   background: var(--accent);
 }
 .tl-year-deco {
-  font-family: var(--font-display);
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 4rem;
   font-weight: 900;
   color: color-mix(in srgb, var(--accent) 15%, transparent);
@@ -544,6 +549,7 @@ body {
 .timeline-item:hover .timeline-head h3 { color: var(--accent-strong); }
 .timeline-head h3 { transition: color 0.2s ease; }
 .timeline-content li {
+  font-weight: 400;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 .timeline-content li:hover {
@@ -567,9 +573,11 @@ body {
   gap: 10px 16px;
 }
 .timeline-head h3 {
-  font-family: var(--font-display);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
   font-size: 1.3rem;
   margin: 0;
+  letter-spacing: -0.01em;
 }
 .org-logo {
   width: 32px;
@@ -594,13 +602,13 @@ body {
   border: none;
   border-radius: 50%;
   color: var(--accent);
-  font-family: var(--font-body);
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
 }
 .timeline-date {
   font-size: 0.82rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--accent-strong);
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -642,10 +650,12 @@ body {
   border-color: var(--accent);
 }
 .edu-card h3 {
-  font-family: var(--font-display);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
   font-size: 1.1rem;
   margin: 0;
   line-height: 1.3;
+  letter-spacing: -0.01em;
   transition: color 0.2s ease;
 }
 .edu-card:hover h3 { color: var(--accent-strong); }
@@ -657,7 +667,8 @@ body {
   gap: 48px;
 }
 .skills-col h3 {
-  font-family: var(--font-display);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
   margin: 0 0 20px;
   font-size: 1.2rem;
 }
@@ -716,6 +727,7 @@ body {
 /* Contact */
 .contact-intro {
   color: var(--text-soft);
+  font-weight: 400;
   max-width: 55ch;
   margin: -16px 0 36px;
 }
