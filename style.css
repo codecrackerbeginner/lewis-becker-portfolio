@@ -20,31 +20,6 @@
   --shadow:       0 4px 24px rgba(0, 0, 0, 0.08);
   --font:         "Plus Jakarta Sans", sans-serif;
   --radius:       4px;
-  color-scheme: light;
-}
-
-:root[data-theme="dark"] {
-  --bg:        #111813;
-  --bg-alt:    #161E15;
-  --surface:   #1C2A1D;
-  --text:      #F0EDE8;
-  --text-soft: #9AA89A;
-  --border:    #2A3A2B;
-  --shadow:    0 4px 24px rgba(0, 0, 0, 0.4);
-  color-scheme: dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg:        #111813;
-    --bg-alt:    #161E15;
-    --surface:   #1C2A1D;
-    --text:      #F0EDE8;
-    --text-soft: #9AA89A;
-    --border:    #2A3A2B;
-    --shadow:    0 4px 24px rgba(0, 0, 0, 0.4);
-    color-scheme: dark;
-  }
 }
 
 * { box-sizing: border-box; }
@@ -158,8 +133,6 @@ body {
   color: #ffffff;
 }
 .icon-moon { display: none; }
-:root[data-theme="dark"] .icon-sun { display: none; }
-:root[data-theme="dark"] .icon-moon { display: block; }
 
 .nav-toggle {
   display: none;
@@ -524,9 +497,6 @@ body {
   display: block;
   margin-bottom: 6px;
   letter-spacing: -0.04em;
-}
-:root[data-theme="dark"] .tl-year-deco {
-  color: rgba(0, 180, 80, 0.12);
 }
 .timeline-marker {
   display: none;
